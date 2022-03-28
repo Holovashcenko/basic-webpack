@@ -1,0 +1,29 @@
+{
+  "name": "basic-webpack",
+  "version": "1.0.0",
+  "description": "basic webpack config",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack serve",
+    "watch": "webpack --watch",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Holovashcenko/basic-webpack.git"
+  },
+  "keywords": [
+    "webpack"
+  ],
+  "author": "Vlad Holovashchenko <holovashcenko@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Holovashcenko/basic-webpack/issues"
+  },
+  "homepage": "https://github.com/Holovashcenko/basic-webpack#readme",
+  "devDependencies": {
+    "webpack": "^5.70.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  }
+}
