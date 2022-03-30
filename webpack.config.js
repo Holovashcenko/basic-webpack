@@ -36,6 +36,11 @@ module.exports = {
         },
       },
       {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/,
+      },
+      {
         test: /\.(s[ac]|c)ss$/i,
         use: [
           MiniCssExtractPlugin.loader,
@@ -54,6 +59,9 @@ module.exports = {
       },
     ],
   },
+  resolve: {
+    extensions: ['.tsx', '.ts', '.js'],
+  },
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/template.html',
@@ -62,7 +70,7 @@ module.exports = {
       filename: '[name].[contenthash].css',
     }),
   ],
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   devServer: {
     static: {
       directory: path.resolve(__dirname, 'dist'),
