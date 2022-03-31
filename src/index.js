@@ -1,6 +1,7 @@
 import { vlad } from './example'
 import showInfo from './example'
 import './styles/main.scss'
+import './styles/style.css'
 import exampleImg from './assets/example.svg'
 
 const exlImg = document.getElementById('exlImg')
